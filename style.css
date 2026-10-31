@@ -296,3 +296,11 @@ details p{margin:0;padding:0 0 1.2rem}
 .dishes .w{display:inline}
 @media (max-width:820px){.dishes .w{display:inline}.dishes h4{font-size:1.15rem}}
 .dishes{margin-top:1.8rem}
+
+/* Галерея блюд: фото разной формы без обрезки */
+.gallery5{columns:3 260px;column-gap:.8rem}
+.gallery5 figure{position:relative;margin:0 0 .8rem;overflow:hidden;border-radius:4px;break-inside:avoid;transition:box-shadow .4s ease}
+.gallery5 img{display:block;width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gallery5 figcaption{position:absolute;left:0;right:0;bottom:0;padding:2rem 1rem .8rem;color:#fff;font:700 1.05rem var(--f-head);letter-spacing:.06em;background:linear-gradient(transparent,rgba(6,19,14,.85))}
+@media (hover:hover){.gallery5 figure:hover{box-shadow:0 12px 32px rgba(0,0,0,.5)}.gallery5 figure:hover img{transform:scale(1.05)}}
+@media (max-width:820px){.gallery5{columns:2 140px;column-gap:.6rem}.gallery5 figure{margin-bottom:.6rem}}

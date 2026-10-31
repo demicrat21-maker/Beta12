@@ -247,7 +247,7 @@ tabs.forEach((t,i)=>{
 (function(){try{
   var TYPES={
     wedding:[["all","Все"],["president","Президиум"],["photozone","Фотозоны и рассадка"],["tables","Столы гостей"],["decor","Декор и детали"]],
-    dishes:[["all","Все"],["cuts","Нарезки"],["hot","Горячее"]]
+    dishes:[["all","Все"],["salads","Салаты"],["cuts","Нарезки"],["hot","Горячее"],["sauces","Соусы"]]
   };
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
   Object.keys(TYPES).forEach(function(cat){
